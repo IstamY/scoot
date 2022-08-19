@@ -1,0 +1,120 @@
+.how-use {
+    position: relative;
+    overflow: hidden;
+
+
+
+    .container {
+        padding: 150px 30px;
+
+        .use-line {
+            position: absolute;
+            width: 974px;
+            height: 1px;
+            border: 15px solid #E5ECF4;
+            margin-top: 31px;
+            margin-left: -165px;
+            z-index: -1;
+        }
+
+        .use-list {
+            display: flex;
+            justify-content: space-between;
+
+            .use-item {
+                width: 350px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 27px;
+
+                .use-item__text {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 27px;
+
+                    h3 {
+                        font-family: 'Space Mono';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 28px;
+                        letter-spacing: -1.07143px;
+                        color: #495567;
+                    }
+
+                    p {
+                        font-family: 'Lexend Deca';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 25px;
+                        color: #939CAA;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .how-use {
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .use-line {
+                height: 512px;
+                width: 1px;
+                margin-top: -260px;
+                margin-left: -480px;
+
+            }
+
+            .use-list {
+                flex-direction: column;
+                gap: 40px;
+
+                .use-item {
+                    width: 575px;
+                    flex-direction: row;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .how-use {
+        .container {
+
+            .use-line {
+                display: none;
+
+            }
+
+            .use-list {
+                flex-direction: column;
+                gap: 40px;
+
+                .use-item {
+                    width: 100%;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    .use-item__text {
+                        text-align: center;
+
+                        h3 {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

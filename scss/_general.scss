@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li,
+a,
+input,
+button,
+select,
+option,
+textarea {
+    list-style: none;
+    text-decoration: none;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+body {
+    font-family: 'Space Mono';
+
+}
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.btn {
+    // height: 53px;
+    padding: 14px 39px;
+    color: white;
+    background: #FCB72B;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    transition: all .3s ease;
+
+    &:hover {
+        background-color: #ffc653;
+    }
+}
